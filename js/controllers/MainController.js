@@ -61,16 +61,16 @@
 			($scope.board[2].value==chars&&$scope.board[4].value==chars&&$scope.board[6].value==chars)){
 				$scope.playable=false;
 				if(chars==1){
-					$scope.result="Won";
+					$scope.result="You won! To play again, refresh website";
 				}else{
-					$scope.result="Lost";
+					$scope.result="You lost! To play again, refresh website";
 				}
 			}
 	}
 		
 		
 	function tie(){
-		$scope.result="Tie";
+		$scope.result="Tie! To play again, refresh website";
 		$scope.playable=false;
 	}
 	}]); 
