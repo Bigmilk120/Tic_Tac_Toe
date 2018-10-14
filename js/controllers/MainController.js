@@ -1,7 +1,7 @@
 	app.controller('MainController', ['$scope', function($scope) { 
 	$iterator=0;
 	$scope.playable=true;
-	$scope.result="game in progress";
+	$scope.result=" ";
 
 	$scope.board=[
 		{value:0,
@@ -30,7 +30,6 @@
 				$scope.board[i].value=1;
 				$scope.board[i].src="circle.jpg";
 				$scope.ifLost(1);
-				$scope.temp1="jestem";
 				$iterator++;
 				if($iterator==5&&$scope.playable==true){
 					tie();
@@ -49,8 +48,6 @@
 		}while($scope.board[rand_place].value!=0);
 		$scope.board[rand_place].value=2;
 		$scope.board[rand_place].src="cross.jpg";
-							$scope.temp2=" tutaj "+rand_place;
-
 	}
 		
 	$scope.ifLost=function(chars){
@@ -76,5 +73,4 @@
 		$scope.result="Tie";
 		$scope.playable=false;
 	}
-
 	}]); 
