@@ -1,9 +1,15 @@
-html, body, .main { height: 100vh; width: 100vm; margin: 0 auto;overflow:hidden;}
+html, body, .main { height: 100vh; width: 100vm; margin: 0 auto;font-family: 'Mali', cursive;overflow:hidden;
+}
 
+.title{
+	height:20vh;
+	font-size:10vh;
+	padding-bottom:5vh;
+	text-align: center;
+}
 .description{
-	width:100%;
-	height:20%;
-	background-color:red;
+	float:left;
+	width:60vw;
 }
 .game{
 	float:left;
