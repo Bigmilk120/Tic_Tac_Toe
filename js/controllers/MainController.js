@@ -39,7 +39,7 @@ app.controller('MainController', ['$scope', function($scope) {
 				}else{
 					AI_move();
 					$scope.ifLost(2);
-					$scope.temp2=" tutaj"+i;
+					$scope.temp2=" tutaj "+i;
 				}
 			}	
 		}
@@ -54,16 +54,16 @@ app.controller('MainController', ['$scope', function($scope) {
 		}
 		
 		$scope.ifLost=function(chars){
-			if(($scope.board[0]==chars&&$scope.board[1]==chars&&$scope.board[2]==chars)||
-				($scope.board[2]==chars&&$scope.board[5]==chars&&$scope.board[8]==chars)||
-				($scope.board[0]==chars&&$scope.board[3]==chars&&$scope.board[6]==chars)||
-				($scope.board[6]==chars&&$scope.board[7]==chars&&$scope.board[8]==chars)||
-				($scope.board[1]==chars&&$scope.board[4]==chars&&$scope.board[7]==chars)||
-				($scope.board[3]==chars&&$scope.board[4]==chars&&$scope.board[5]==chars)||
-				($scope.board[0]==chars&&$scope.board[4]==chars&&$scope.board[8]==chars)||
-				($scope.board[2]==chars&&$scope.board[4]==chars&&$scope.board[6]==chars)){
+			if(($scope.board[0].value==chars&&$scope.board[1].value==chars&&$scope.board[2].value==chars)||
+				($scope.board[2].value==chars&&$scope.board[5].value==chars&&$scope.board[8].value==chars)||
+				($scope.board[0].value==chars&&$scope.board[3].value==chars&&$scope.board[6].value==chars)||
+				($scope.board[6].value==chars&&$scope.board[7].value==chars&&$scope.board[8].value==chars)||
+				($scope.board[1].value==chars&&$scope.board[4].value==chars&&$scope.board[7].value==chars)||
+				($scope.board[3].value==chars&&$scope.board[4].value==chars&&$scope.board[5].value==chars)||
+				($scope.board[0].value==chars&&$scope.board[4].value==chars&&$scope.board[8].value==chars)||
+				($scope.board[2].value==chars&&$scope.board[4].value==chars&&$scope.board[6].value==chars)){
 					$scope.playable=false;
-					if(i==1){
+					if(chars==1){
 						$scope.result="Won";
 					}else{
 						$scope.result=="Lost";
