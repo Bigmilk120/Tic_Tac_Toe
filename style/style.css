@@ -1,4 +1,4 @@
-html, body, .main { height: 100%; width: 100%; margin: 0 auto;}
+html, body, .main { height: 100vh; width: 100vm; margin: 0 auto;overflow:hidden;}
 
 .description{
 	width:100%;
@@ -8,13 +8,13 @@ html, body, .main { height: 100%; width: 100%; margin: 0 auto;}
 .game{
 	float:left;
 	margin-left:25%;
-	width:50%;
-	height:80%;
+	width:50vw;
+	height:80vh;
 }
 .place{
 	float:left;
-	width:33%;
-	height:33%;
+	width:15vw;
+	height:20vh;
 	text-align:center;
 	border:1px solid  black;
 }
